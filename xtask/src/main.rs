@@ -12,10 +12,8 @@ struct Cli {
 
 #[derive(Subcommand)]
 enum Commands {
-    /// Run the formatter for the workspace.
-    Fmt,
-    /// Run the project tests.
-    Test,
+=    Fmt,
+=    Test,
 }
 
 fn main() -> Result<()> {
