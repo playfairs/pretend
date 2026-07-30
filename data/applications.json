@@ -1,0 +1,24 @@
+{
+  "applications": [
+    {
+      "name": "Minecraft",
+      "application_id": "365975655608745985",
+      "aliases": ["mc", "mine", "minecraft" ]
+    },
+    {
+      "name": "Spotify",
+      "application_id": "806769515248875520",
+      "aliases": ["music", "spot", "spotify"]
+    },
+    {
+      "name": "Visual Studio Code",
+      "application_id": "383226320970055681",
+      "aliases": ["vscode", "code", "editor"]
+    },
+    {
+      "name": "Discord",
+      "application_id": "121666689700022272",
+      "aliases": ["discord", "chat"]
+    }
+  ]
+}
