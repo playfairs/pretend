@@ -14,10 +14,7 @@ use crate::models::{
   App,
   Presence,
 };
-use crate::rpc::{
-  Activity,
-  RpcClient,
-};
+use crate::rpc::RpcClient;
 use crate::util::paths;
 
 pub struct PretendService {

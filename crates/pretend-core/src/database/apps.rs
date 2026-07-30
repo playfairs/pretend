@@ -17,6 +17,7 @@ use crate::util::paths;
 #[derive(Debug)]
 pub struct AppDatabase {
   apps: Vec<App>,
+  #[allow(dead_code)]
   source: PathBuf,
 }
 
