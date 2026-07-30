@@ -1,24 +1,28 @@
 # pretend
 
-pretend is a Discord Rich Presence manager and spoofer for local Discord IPC. It lets you choose from a curated set of Discord applications, publish activities, and clear them again from the terminal.
+pretend is a Discord Rich Presence manager and spoofer built in Rust. It loads application definitions, searches them by name or alias, and publishes Rich Presence activities through Discord IPC.
 
-## Features
+## Planned Features
 
-- Manage Discord Rich Presence activities from the command line
-- Search applications by name or aliases
-- Store configuration in ~/.config/pretend
-- Load default application definitions from data/applications.json
-- Publish and clear activities over Discord IPC
+- Start and stop Discord Rich Presence activities from the terminal
+- Search applications by name or alias
+- Load application definitions from data/applications.json
+- Store configuration and cache under ~/.config/pretend
+- Publish activities through local Discord IPC sockets
 
 ## Installation
 
 ### Cargo
 
+```
 cargo build
+```
 
 ### Nix
 
+```
 nix develop
+```
 
 ## Usage
 
@@ -29,21 +33,6 @@ pretend start minecraft --details "Building" --state "Creative"
 pretend stop
 pretend config
 ```
-
-## Configuration
-
-The tool stores data in ~/.config/pretend:
-
-```toml
-[settings]
-default_application = "minecraft"
-last_application_id = "365975655608745985"
-```
-
-## Architecture
-
-- pretend: CLI parsing, commands, and terminal output
-- pretend-core: application database, config handling, RPC client, models, and utilities
 
 ## Nix
 
